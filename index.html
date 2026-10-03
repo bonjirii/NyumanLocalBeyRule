@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ベイブレードX 乳頭卍會ローカルルール</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            /* 全体の文字を丸っこくてカワイイものに！ */
+            font-family: 'Zen Maru Gothic', sans-serif;
+            color: #4a4a4a;
+            background-color: #fcfcfc; /* スッキリした明るい背景 */
+            
+            /* うっすらとしたカワイイ背景模様 */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 250 250'%3E%3Cg fill='none' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' opacity='0.2'%3E%3Cpath d='M40 40l10 20 20 5-15 15 5 20-20-10-20 10 5-20-15-15 20-5z' stroke='%23ffb3c6'/%3E%3Cpath d='M180 50c15-10 35 5 30 25-5 25-35 30-45 5-5-15 5-35 15-30z' stroke='%23a0c4ff'/%3E%3Cpath d='M120 120l25 30-40 10z' stroke='%23fdffb6'/%3E%3C/g%3E%3C/svg%3E");
+            background-attachment: fixed;
+        }
+
+        .font-kiwi {
+            font-family: 'Kiwi Maru', serif;
+        }
+
+        /* 塗りつぶしなしのカラフルな点線枠（カード） */
+        .dashed-card {
+            background-color: #ffffff;
+            border: 4px dashed;
+            border-radius: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            position: relative;
+            z-index: 10;
+        }
+
+        /* セクションごとの枠線の色 */
+        .border-yellow { border-color: #fcd34d; } /* Tailwind yellow-300 */
+        .border-blue { border-color: #93c5fd; }   /* Tailwind blue-300 */
+        .border-green { border-color: #86efac; }  /* Tailwind green-300 */
+        .border-pink { border-color: #f9a8d4; }   /* Tailwind pink-300 */
+        .border-purple { border-color: #d8b4fe; } /* Tailwind purple-300 */
+
+        /* マーカーで引いたような線 */
+        .marker-yellow { background: linear-gradient(transparent 60%, rgba(253, 224, 71, 0.5) 40%); padding: 0 4px; }
+        .marker-blue { background: linear-gradient(transparent 60%, rgba(147, 197, 253, 0.5) 40%); padding: 0 4px; }
+        .marker-pink { background: linear-gradient(transparent 60%, rgba(249, 168, 212, 0.5) 40%); padding: 0 4px; }
+        .marker-purple { background: linear-gradient(transparent 60%, rgba(216, 180, 254, 0.5) 40%); padding: 0 4px; }
+
+        /* ふわふわ動くアニメーション */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 4s ease-in-out infinite; }
+        .animate-float-delay { animation: float 4s ease-in-out infinite; animation-delay: 2s; }
+        
+        .flow-arrow { text-align: center; font-size: 1.5rem; color: #d1d5db; margin: 0.25rem 0; font-weight: bold; }
+    </style>
+</head>
+<body class="antialiased pb-24 text-lg">
+
+    <header class="text-center pt-12 pb-8 px-4 relative">
+        <div class="inline-block relative">
+            <span class="absolute -top-6 -left-6 text-4xl animate-float">✨</span>
+            <span class="absolute -bottom-4 -right-4 text-4xl animate-float-delay">🎈</span>
+            <div class="dashed-card border-yellow px-6 py-4 transform -rotate-2">
+                <h2 class="text-xl md:text-2xl font-bold mb-1 text-blue-500 font-kiwi">チームカスタム３on３</h2>
+                <h1 class="text-3xl md:text-4xl font-black text-gray-800 leading-snug tracking-wide">
+                    ベイブレードX<br>
+                    乳頭卍會ローカルルール
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-4 space-y-10">
+
+        <section class="dashed-card border-yellow p-6 md:p-8 transform rotate-1">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-700 font-kiwi flex items-center gap-2">
+                <span class="text-3xl">🎯</span> 
+                <span class="marker-yellow">このルールのねらい！</span>
+            </h3>
+            <p class="leading-relaxed font-bold mb-4 text-gray-700">
+                いつもの3on3だと、「いちばん強いお決まりの組み合わせ」ばかりになっちゃうこと、あるよね。<br>
+                だからこのルールでは…
+            </p>
+            <div class="bg-yellow-50 rounded-2xl p-4 my-4 text-center">
+                <p class="text-yellow-600 text-xl md:text-2xl font-black font-kiwi leading-relaxed">
+                    「相手のブレードを見てから、<br class="hidden md:block">その場でパーツを組む！」
+                </p>
+            </div>
+            <p class="leading-relaxed font-bold text-gray-700">
+                ベイを自分好みに改造するワクワクと、相手の作戦をよむドキドキを楽しもう！
+            </p>
+        </section>
+
+        <section class="dashed-card border-green p-6 md:p-8 transform -rotate-1">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-700 font-kiwi flex items-center gap-2">
+                <span class="text-3xl">🤝</span> 
+                <span class="marker-green text-green-600 marker-yellow">1. チームを組もう！</span>
+            </h3>
+            <p class="font-bold text-gray-700 mb-8">
+                みんなで<strong class="text-green-500 text-xl">2つのチーム</strong>に分かれるよ！（だいたい2〜3人くらい）<br>
+                チームのみんなでワイワイ相談しながら、作戦をきめよう！
+            </p>
+
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-700 font-kiwi flex items-center gap-2">
+                <span class="text-3xl">⚙️</span> 
+                <span class="marker-yellow">2. つかうパーツ！</span>
+            </h3>
+            
+            <div class="mb-6">
+                <h4 class="text-xl font-bold text-gray-700 mb-2 flex items-center gap-2">
+                    <span class="text-2xl">🛸</span> ブレード
+                </h4>
+                <p class="font-bold text-gray-700 mb-2 ml-8">チームで<strong class="text-yellow-500 text-xl">「3枚」</strong>えらぶよ！</p>
+                <p class="font-bold text-gray-500 text-sm mb-3 ml-8">
+                    （ランダムで引いたり、みんなで話し合ったり、好きな方法で決めよう！）
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-bold text-gray-700 mb-2 flex items-center gap-2">
+                    <span class="text-2xl">🔩</span> ラチェット・ビット
+                </h4>
+                <p class="font-bold text-gray-700 ml-8">
+                    <strong class="text-green-500 text-xl">せいげんナシ！自由に使えるよ！</strong><br>
+                    持っているパーツから好きなものをえらんでね！<br>
+                    <span class="text-sm text-gray-500">（※公式のルールは守ってあそんでね）</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="dashed-card border-blue p-6 md:p-8 transform rotate-1">
+            <h3 class="text-2xl md:text-3xl font-bold mb-6 text-gray-700 font-kiwi flex items-center gap-2">
+                <span class="text-3xl">⚔️</span> 
+                <span class="marker-blue">3. 1～3戦目のルール！</span>
+            </h3>
+
+            <div class="space-y-6">
+                <!-- 1戦目の流れ -->
+                <div>
+                    <h4 class="text-lg font-black text-blue-500 mb-2">🎯 ① まずはブレードをえらぶ！</h4>
+                    <p class="font-bold text-gray-700 ml-6">
+                        チームで相談して、使うブレードを1つきめよう。<br>
+                        きまったら、両チームいっせいに<strong class="text-red-400 text-xl">「公開！」</strong>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-black text-blue-500 mb-2">🛠️ ② その場でカスタマイズ！</h4>
+                    <p class="font-bold text-gray-700 ml-6">
+                        相手のブレードを見てから、パーツを組むよ！<br>
+                        「あいてはスタミナだから、こっちもスタミナで…」とか、チームで相談しよう！<br>
+                        <span class="text-gray-500 text-sm">（⏰ 考える時間はだいたい1分くらい！）</span>
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-black text-blue-500 mb-2">💨 ③ バトル開始！！</h4>
+                    <p class="font-bold text-gray-700 ml-6">
+                        完成したら、いつも通りシュートして対戦するよ！<br>
+                        終わったら、残りのブレードで2戦目、3戦目も同じようにやってね！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashed-card border-pink p-6 md:p-8 transform -rotate-1">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-700 font-kiwi flex items-center gap-2">
+                <span class="text-3xl">🏆</span> 
+                <span class="marker-pink">4. とくてん！</span>
+            </h3>
+            <p class="font-bold mb-4 text-gray-700">
+                スピン、オーバー、バースト、エクストリームなど、もらえるポイントは普通のベイブレードと同じだよ！
+            </p>
+            <p class="font-black text-pink-500">
+                むずかしいボーナスポイントはナシ！シンプルにポイントで勝負だ！
+            </p>
+        </section>
+
+        <section class="dashed-card border-purple p-6 md:p-8 transform rotate-1 mt-10">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-700 font-kiwi flex items-center gap-2 leading-tight">
+                <span class="text-4xl">🤔</span> 
+                <span class="marker-purple">5. もし4戦目があったら…？<br>（ヒミツの予想バトル！）</span>
+            </h3>
+            
+            <p class="font-bold text-gray-700 mb-6">
+                もし同点などで4戦目（延長戦）になったら、ここから少しルールが変わるよ！
+            </p>
+            
+            <div class="mb-6">
+                <h4 class="text-lg font-black text-purple-500 mb-2 flex items-center gap-2">
+                    <span>🎒</span> 使えるパーツは？
+                </h4>
+                <p class="font-bold text-gray-700 ml-8 bg-purple-50 p-3 rounded-xl inline-block">
+                    <strong>1〜3戦目で、自分たちが出したパーツ</strong>（ブレード・ラチェット・ビット）だけを使って、もう一度ベイを組み直すよ！
+                </p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="text-lg font-black text-purple-500 mb-2 flex items-center gap-2">
+                    <span>🤫</span> どうやって戦う？
+                </h4>
+                <p class="font-bold text-gray-700 ml-8">
+                    「相手のブレードを見てから組む」のはおしまい。<br>
+                    そのかわり、<strong class="text-purple-600">相手の今までの出し方から、次は何を出してくるかを予想しよう！</strong>
+                </p>
+            </div>
+            
+            <ul class="list-none space-y-3 font-bold text-gray-600 mb-6 ml-8">
+                <li class="flex gap-2 items-start">
+                    <span class="mt-1 text-purple-400">💡</span> 
+                    <span>「さっきはアタックだったから、次はアレがくるかも…？」</span>
+                </li>
+                <li class="flex gap-2 items-start">
+                    <span class="mt-1 text-purple-400">💡</span> 
+                    <span>「じゃあ、こっちはこの組み合わせで対抗しよう！」</span>
+                </li>
+            </ul>
+
+            <div class="text-center mt-8">
+                <div class="bg-gray-50 rounded-2xl p-4 border-2 border-dashed border-gray-300 relative">
+                    <p class="font-black text-lg text-gray-700">
+                        チームで予想したら、見えないようにこっそりベイを組んで…<br>
+                        おたがい完成したら、<span class="text-2xl text-red-500 mt-2 inline-block">「せーの！」でいっせいに見せてバトル！！</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mt-12 pb-8">
+            <p class="font-black text-gray-700 text-xl leading-relaxed">
+                改造する楽しさと、予想するワクワクを、<br>
+                チームみんなで全力で楽しもう！！🎊
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>
